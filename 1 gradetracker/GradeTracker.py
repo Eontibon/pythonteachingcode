@@ -9,7 +9,7 @@ See https://www.geeksforgeeks.org/python-docstrings/
 import statistics as s
 
 #add constants next
-admins = {'Dominic':'Hacker','Faculty2':'ABC123','Faculty3':'123ABC'}
+admins = {'Faculty1':'Hacker','Faculty2':'ABC123','Faculty3':'123ABC','Eliana':'Ontibon'}
 
 # Like the admins above is a dictionary but of students.
 # Dictionaries use curly brackets with colons to associate keys with values.
@@ -39,9 +39,11 @@ def enter_grades():
     else:
         print('Student not found. Please check your spelling or go back and add if new.')
 
-def remove_student():
+def removestudent():
     '''
+
     Function to remove a specific student.
+
     '''
     name_to_remove = input('Who do you want to remove? ')
     if name_to_remove in students:
@@ -83,7 +85,7 @@ def main():
         enter_grades()
     elif action == '2':
         #print('2 selected')
-        remove_student()
+        removestudent()
     elif action == '3':
         #print('3 selected')
         average_students()
