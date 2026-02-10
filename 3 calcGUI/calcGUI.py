@@ -32,8 +32,8 @@ class Calculator(Frame):
         """
         self.entry.configure(state="normal")
         self.flash(btn) # Flash a button correspond to keystroke
-        if self.entry.get() == "Invalid Input":
-            self.entry.delete(0,END)
+    if self.entry.get() == "Invalid Input":
+        self.entry.delete(0,END)
         self.entry.insert(END, char)
         self.entry.configure(state="disabled")
 
