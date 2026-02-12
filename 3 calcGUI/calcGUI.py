@@ -111,7 +111,7 @@ class Calculator(Frame):
             pass
 
     def bind_buttons(self, master):
-        """
+        """–
         Binds keys to their appropriate input
         :param master: root.Tk()
         :return: None
